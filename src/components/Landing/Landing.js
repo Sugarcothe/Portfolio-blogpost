@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Landing.scss';
+import {init} from 'ityped'
 
 const Landing = () => {
+  const textRef = useRef()
+
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      backSpeed:70,
+      backDelay: 1500,
+      strings: ["Fullstack", "JavaScript","Youtuber", "Designer", "Tech Blogger"]
+    })
+    
+  }, [])
+
   return (
     <div className='landing' id='landing'>
       <div className='left'>
@@ -13,9 +26,9 @@ const Landing = () => {
         <div className='wrapper'>
           <h1>Hi There, i'm</h1>
           <h2>Hi There, i'm</h2>
-          <h3>Freelance<span>Developer</span></h3>
+          <h3>Panda <span ref={textRef}>Developer</span></h3>
         </div>
-        <a href="#projects">
+        <a href="#portfolio">
           <i className="fas fa-angle-double-down fa-3x"></i>
         </a>
       </div>

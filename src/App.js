@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Blog from './components/Blog/Blog'
+import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
 import Landing from './components/Landing/Landing'
 import Project from './components/Proj/Proj'
@@ -23,6 +24,7 @@ function App() {
 
       <section className='sections'>
         <Landing/>
+        <Portfolio/>
         <Project/>
         <Blog/>
         <Contact/>
