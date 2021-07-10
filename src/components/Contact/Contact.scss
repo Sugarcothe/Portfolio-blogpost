@@ -1,6 +1,14 @@
+@import '../../global.scss';
+
 .contact {
   background-color: rgb(255, 255, 255);
   display: flex;
+
+  @include mobile{
+    margin-top: 3rem;
+    flex-direction: column;
+
+  }
 
   .left{
     flex: 1;
@@ -11,6 +19,7 @@
   }
   .right{
     flex: 1;
+    color: rgb(5, 77, 97);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,6 +27,7 @@
 
     h2{
       font-size: 30px;
+      color: rgb(5, 77, 97);
     }
 
     form{
@@ -33,6 +43,12 @@
         width: 300px;
         height: 30px;
         font-size: 14px;
+
+        
+        @include mobile{
+          width: 200px;
+          height: 20px;
+        }
       }
 
       textarea {
@@ -40,25 +56,36 @@
         height: 200px;
         font-size: 14px;
 
+        @include mobile{
+          width: 200px;
+          height: 100%;
+          margin: 1rem;
+        }
+
       }
       button {
         width: 150px;
         height: 30px;
         color: whitesmoke;
-        background: rgb(247,148,29);
+        background: rgb(0, 0, 0);
         border: none;
         border-radius: 10px;
         font-weight: 500;
         cursor: pointer;
 
         &:hover{
-          transform: scale(1.1);
-          transition: all 1s ease;
+          transform: scale(1.2);
+          transition: all 1s ease-in;
+          transition: all 1s ease-out;
+
         }
 
         &:focus{
           outline: one;
         }
+      }
+      span{
+        color: rgb(48, 70, 7);
       }
     }
   }

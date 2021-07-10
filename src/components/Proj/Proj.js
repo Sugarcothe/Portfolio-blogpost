@@ -9,19 +9,9 @@ const Project = () => {
   const data = [
     {
       id: '1',
-      icon: 'assets/cart.png',
-      title: 'Amazon Clone',
-      desc: 'Lorem Ipsum is simply dummy text',
-      img:'assets/amazon.png',
-      github:'',
-      link:''
-
-
-    },
-    {
-      id: '2',
       icon: 'assets/beatbox.png',
-      title: 'Beat Box',
+      title: 'Drum boy',
+      proj: 'Beat Box',
       desc: 'Lorem Ipsum is simply dummy text',
       img:'assets/drumbox.png',
       github:'',
@@ -29,9 +19,10 @@ const Project = () => {
 
     },
     {
-      id: '3',
+      id: '2',
       icon: 'assets/cart.png',
       title: 'Booker Buy',
+      proj: 'E-commerce',
       desc: 'Lorem Ipsum is simply dummy text',
       img:'assets/bookecommerce.png',
       github:'',
@@ -39,9 +30,10 @@ const Project = () => {
 
     },
     {
-      id: '4',
+      id: '3',
       icon: 'assets/chaticon.png',
       title: 'Pidgin Box',
+      proj: 'Chat APP',
       desc: 'Lorem Ipsum is simply dummy text',
       img:'assets/pidgin.png',
       github:'',
@@ -50,29 +42,21 @@ const Project = () => {
 
     }, 
     {
-      id: '5',
+      id: '4',
       icon: 'assets/mobile.png',
-      title: 'Social Media',
+      title: 'Interact',
+      proj: 'Social Media',
       desc: 'Lorem Ipsum is simply dummy text',
       img:'assets/socialmedia.jpg',
       github:'',
       link:''
       
 
-    },
-    {
-      id: '6',
-      icon: 'assets/markdown.png',
-      title: 'Markdown Previewer',
-      desc: 'Lorem Ipsum is simply dummy text',
-      img:'assets/markdown1.png',
-      github:'',
-      link:''
-    }  
+    } 
   ]
 
   const handleClick = (way) => {
-    way === 'left' ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 5) : setCurrentSlide(currentSlide<data.length -1 ?currentSlide+1: 0)
+    way === 'left' ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 3) : setCurrentSlide(currentSlide<data.length -1 ?currentSlide+1: 0)
   }
 
   return (
@@ -88,7 +72,7 @@ const Project = () => {
                 </div> 
                 <h4>{d.title}</h4>
               <p>{d.desc}</p>
-              <span>Projects</span>
+              <span>{d.proj}</span>
               <div className='links'>
                 <a href=''><i class="fab fa-github"></i></a>
                 <a className='lin' href=''><i class="fas fa-link m-3"></i></a>

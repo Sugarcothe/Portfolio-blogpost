@@ -21,11 +21,16 @@
       align-items: center;
       
       .logo {
-        font-size: 40px;
-        font-weight: 700;
+        font-size: 35px;
+        font-weight: 800;
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+
+        @include mobile{
+          font-size: 20px;
+          font-weight: 600;
+        }
       }
 
       .itemContainer  {
@@ -34,8 +39,8 @@
         margin-left: 30px;
 
         span{
-          font-style: 15px;
-          font-weight: 400;
+          font-style: 10px;
+          font-weight: 100;
         }
       }
     }

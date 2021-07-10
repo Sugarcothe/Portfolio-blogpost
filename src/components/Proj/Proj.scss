@@ -1,15 +1,26 @@
+@import '../../global.scss';
+
 .projects {
-  background-color: rgb(247,148,29);
+  background-color: $main-color;
   display: flex;
   align-items: center;
   justify-content: content;
-  position: relative;
+  position: relative; 
+
+
+  // @include mobile{
+  //   display: none;
+  // }
 
   .fas {
     height: 70px;
     position: absolute;
     cursor: pointer;
     color: black;
+
+    @include mobile{
+      display: none;
+    }
 
 
     &.left{
@@ -29,6 +40,12 @@
     left: 0;
     transition: all 1s ease-out;
 
+    @include mobile{
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .container {
       width: 100vw;
       display: flex;
@@ -36,13 +53,19 @@
       justify-content: center;
 
       .item{
-        width: 700px;
-        height: 100%;
+        width: 720px;
+        height:100%;
         background-color: white;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include mobile{
+          width: 70%;
+          height: 100px;
+          margin: 5px 0;
+        }
 
         .left{
           flex: 5;
@@ -58,6 +81,12 @@
             flex-direction: column;
             justify-content: space-between;
 
+            
+            @include mobile{
+              width: 100%;
+              height: 100%;
+            }
+
             .imgContainer{
               width: 40px;
               height: 40px;
@@ -67,15 +96,48 @@
               align-items: center;
               align-content: center;
 
+              
+              @include mobile{
+                width: 20px;
+                height: 20px;
+              }
+
               img{
                 width: 25px;
+
+                
+              @include mobile{
+                width: 15px;
+                
+              }
               }
             }
           }
 
-          .lin {
-            margin-left: 10px;
+          h4{
+            font-size: 20px;
+            @include mobile{
+              font-size: 13px;
+            }
           }
+
+          p{
+            font-size: 13px;
+            @include mobile{
+              display: none;
+            }
+  
+          }
+          .span{
+            @include mobile{
+             font-size: 9px;
+            }
+          }
+
+         
+          // .lin {
+          //   margin-left: 10px;
+          // }
 
           a{
             text-decoration: none;
@@ -99,6 +161,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
+
             img{
               width: auto;
               height: 350px;

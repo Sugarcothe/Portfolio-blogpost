@@ -1,16 +1,23 @@
+@import '../../global.scss';
+
 .landing {
   background-color: white;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.5;
     overflow: hidden;
 
     .imgContainer {
-      margin-top: 20px;
-      width: 650px;
-      height: 650px;
-      background-color: rgb(247,148,29);
+      margin-top: 10px;
+      width: 500px;
+      height: 500px;
+      background-color: rgb(5, 77, 97);
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
@@ -18,10 +25,20 @@
       float: right;
       z-index: 0;
 
+      @include mobile{
+        align-items: flex-start;
+        width: 262px;
+        height: 262px;
+      }
+
       img {
-        width: 70%;
-        z-index: 1;
-        overflow: visible;
+        height: 80%;
+        object-fit: cover;
+        position: absolute;
+        
+        @include mobile{
+          height: 53%;
+        }
       }
     }
   }
@@ -36,20 +53,36 @@
       flex-direction: column;
       justify-content: center;
 
+      @include mobile{
+        padding-left: 0;
+        align-items: center;
+      }
+
       h1{
         font-size: 60px;
         margin: 10px 0;
         font-weight: 800;
+
+        @include mobile{
+          font-size: 35px;
+        }
       }
       h2{
         font-size: 35px;
+        @include mobile{
+          font-size: 25px;
+        }
       }
       h3{
         font-size: 30px;
 
+        @include mobile{
+          font-size: 15px;
+        }
+
         span{
           font-size: inherit;
-          color: rgb(247,148,29);
+          color: rgb(247, 143, 16);
         }
         .ityped-cursor{
           animation: blink 1s infinite;

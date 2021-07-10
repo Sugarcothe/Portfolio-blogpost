@@ -6,7 +6,7 @@ const Menu = ({menuOpen, setMenuOpen}) => {
     <div className={'menu '+(menuOpen && "active")}>
       <ul>
         <li onClick={()=> setMenuOpen(false)}>
-          <a href='#portfolio'>Portfolio</a>
+          <a href='#portfolio'>Stack</a>
         </li>
         <li onClick={()=> setMenuOpen(false)}>
           <a href='#projects'>Projects</a>
@@ -15,10 +15,13 @@ const Menu = ({menuOpen, setMenuOpen}) => {
           <a href='#certification'>Certifications</a>
         </li>
         <li onClick={()=> setMenuOpen(false)}>
-          <a href='#testimonials'>Testimonials</a>
+          <a href='#testimonials'>Certificates</a>
         </li>
         <li onClick={()=> setMenuOpen(false)}>
           <a href='#blog'>Blog</a>
+        </li>
+        <li onClick={()=> setMenuOpen(false)}>
+          <a href='#testimonials'>Testimonials</a>
         </li>
         <li onClick={()=> setMenuOpen(false)}>
           <a href='#contact'>Contact</a>
