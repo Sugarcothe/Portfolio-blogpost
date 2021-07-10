@@ -1,12 +1,82 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Blog.scss'
 
-const Blog = () => {
+
+const Portfolio = () => {
+
+
+
+  const certificates = [
+    {
+      id: 1,
+      By: 'FreeCodeCamp',
+      title: 'Frontend Libraries',
+      img: 'assets/Fcfront.png',
+      link: 'freecodecamp.org/certification/fccfc062c2b-fe45-43d0-bb2d-58474b4be5cc/front-end-libraries'
+    },
+    {
+      id: 2,
+      By: 'HackerRank',
+      title: 'React',
+      img: 'assets/HRreact.png',
+      link: 'https://www.hackerrank.com/certificates/4b4dc06904a5'
+    },
+    {
+      id: 3,
+      By: 'HackerRank',
+      title: 'JavaScript',
+      img: 'assets/HR-JS.png',
+      link: 'https://www.hackerrank.com/certificates/e8e45b8c57a2'
+    },
+    {
+      id: 4,
+      By: 'FreeCodeCamp',
+      title: 'Responsive Web Design',
+      img: 'assets/FCresp.png',
+      link: '//freecodecamp.org/certification/fccfc062c2b-fe45-43d0-bb2d-58474b4be5cc/responsive-web-design'
+    },
+  ]
+
+  // {
+  //   id: 1,
+  //   By: 'FreeCodeCamp',
+  //   title: 'Frontend Libraries',
+  //   img: 'assets/FCfront.png',
+  //   link: 'freecodecamp.org/certification/fccfc062c2b-fe45-43d0-bb2d-58474b4be5cc/front-end-libraries'
+  // },
+
   return (
-    <div className='blog' id='blog'>
-      this is the blog section
+    <div className='testimonials' id='testimonials'>
+      <h1>Certificates</h1>
+      <div className='container'>
+        {certificates.map((d) => (
+          <div className='item'>
+            <img src={d.img} alt='my image'/>
+            <h3>{d.title}</h3>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
 
-export default Blog
+export default Portfolio
+
+
+
+
+
+
+
+
+
+
+
+
+// HackkerrankReact   https://www.hackerrank.com/certificates/4b4dc06904a5
+
+// HackerrankJs    https://www.hackerrank.com/certificates/e8e45b8c57a2
+
+//freecodecamp.org/certification/fccfc062c2b-fe45-43d0-bb2d-58474b4be5cc/front-end-libraries
+
+//freecodecamp.org/certification/fccfc062c2b-fe45-43d0-bb2d-58474b4be5cc/responsive-web-design

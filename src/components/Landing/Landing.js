@@ -19,13 +19,13 @@ const Landing = () => {
     <div className='landing' id='landing'>
       <div className='left'>
         <div className='imgContainer'>
-          <img src='assets/panda.jpg' alt=''/>
+          <img className='imagekungfu' src='assets/kunfi.png' alt=''/>
         </div>
       </div>
       <div className='right'>
         <div className='wrapper'>
-          <h1>Hi There, i'm</h1>
-          <h2>Hi There, i'm</h2>
+          <h1>Hi There, I'm Val</h1>
+          <h2>love Panda</h2>
           <h3>Panda <span ref={textRef}>Developer</span></h3>
         </div>
         <a href="#portfolio">

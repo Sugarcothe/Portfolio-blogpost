@@ -7,7 +7,7 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
       
       <div className='wrapper'>
         <div className='left'>
-          <a href='#landing' className='logo' >Utomsinachi</a>
+          <a href='#landing' className='logo' >Pandajs.wtf!</a>
         </div>
         <div className='itemsContainer'>
           
