@@ -1,12 +1,19 @@
+@import '../../global.scss';
+
 h1{
-  font-size: 40px;
-  color: rgb(5, 77, 97);
+  font-size: 50px;
+  margin-top: 2rem;
+  color: $secondary-color;
+
+  @include mobile {
+    margin-top: 0.5rem;
+  }
 }
 
 .item {
-  width: 220px;
-  height: 150px;
-  border-radius: 10px;
+  width: 400px;
+  flex-wrap: wrap;
+  height: auto;
   border: 1px solid lightgrey;
   margin: 10px 20px;
   display: flex;
@@ -16,8 +23,15 @@ h1{
   transition: all 5s ease-in;
   transition: all 2s ease-out;
 
-  h3{
+  @include mobile{
+    width: 120px;
+    height: auto;
+    margin: 3px 7px;
+  }
+
+  a{
     position: absolute;
+    text-decoration: none;
     font-size: 20px;
     color: white;
   }
@@ -29,7 +43,7 @@ h1{
     z-index: 1;
   }
   &:hover{
-    background-color: black;
+    background-color: $secondary-color;
     img{
       opacity: 0.4;
       z-index: 0;

@@ -1,6 +1,6 @@
 @import '../../global.scss';
 
-.portfolio{
+.portfolio {
   margin-top: 4rem;
   background-color: white;
   display: flex;
@@ -9,9 +9,10 @@
 
   h1{
     font-size: 50px;
+    margin-top: 4rem;
 
     @include mobile{
-      font-size: 17px;
+      font-size: 25px;
     }
   }
 
@@ -43,7 +44,7 @@
       width: 220px;
       height: 150px;
       border-radius: 10px;
-      border: 1px solid lightgrey;
+      border: 1px solid rgb(255, 255, 255);
       margin: 10px 20px;
       display: flex;
       align-items: center;
@@ -70,9 +71,9 @@
         z-index: 1;
       }
       &:hover{
-        background-color: black;
+        background-color: $secondary-color;
         img{
-          opacity: 0.4;
+          opacity: 0.9;
           z-index: 0;
         }
       }

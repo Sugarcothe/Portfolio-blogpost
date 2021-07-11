@@ -45,7 +45,8 @@
       transition: all 1s ease;
 
       @include mobile{
-        height: 150px;
+        height: auto;
+        width: 205px;
         margin: 10px 0;
       }
 
@@ -55,8 +56,8 @@
         margin: 0 30px;
         
         @include mobile{
-          width: 250px;
-          height: 180px;
+          width: 205;
+          height: auto;
           margin: 1px;
 
         }

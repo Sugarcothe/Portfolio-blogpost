@@ -6,20 +6,23 @@ const Menu = ({menuOpen, setMenuOpen}) => {
     <div className={'menu '+(menuOpen && "active")}>
       <ul>
         <li onClick={()=> setMenuOpen(false)}>
+          <a href='#landing'>Home</a>
+        </li>
+        <li onClick={()=> setMenuOpen(false)}>
           <a href='#portfolio'>Stack</a>
         </li>
         <li onClick={()=> setMenuOpen(false)}>
           <a href='#projects'>Projects</a>
         </li>
-        <li onClick={()=> setMenuOpen(false)}>
+        {/* <li onClick={()=> setMenuOpen(false)}>
           <a href='#certification'>Certifications</a>
-        </li>
+        </li> */}
         <li onClick={()=> setMenuOpen(false)}>
-          <a href='#testimonials'>Certificates</a>
+          <a href='#blog'>Certificates</a>
         </li>
-        <li onClick={()=> setMenuOpen(false)}>
+        {/* <li onClick={()=> setMenuOpen(false)}>
           <a href='#blog'>Blog</a>
-        </li>
+        </li> */}
         <li onClick={()=> setMenuOpen(false)}>
           <a href='#testimonials'>Testimonials</a>
         </li>

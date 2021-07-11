@@ -12,7 +12,7 @@ const Portfolio = () => {
       By: 'FreeCodeCamp',
       title: 'Frontend Libraries',
       img: 'assets/Fcfront.png',
-      link: 'freecodecamp.org/certification/fccfc062c2b-fe45-43d0-bb2d-58474b4be5cc/front-end-libraries'
+      link: 'https://freecodecamp.org/certification/fccfc062c2b-fe45-43d0-bb2d-58474b4be5cc/front-end-libraries'
     },
     {
       id: 2,
@@ -30,10 +30,17 @@ const Portfolio = () => {
     },
     {
       id: 4,
+      By: 'Programming Hub',
+      title: 'JQuery',
+      img: 'assets/this.png',
+      link: ''
+    },
+    {
+      id: 5,
       By: 'FreeCodeCamp',
       title: 'Responsive Web Design',
       img: 'assets/FCresp.png',
-      link: '//freecodecamp.org/certification/fccfc062c2b-fe45-43d0-bb2d-58474b4be5cc/responsive-web-design'
+      link: 'https://freecodecamp.org/certification/fccfc062c2b-fe45-43d0-bb2d-58474b4be5cc/responsive-web-design'
     },
   ]
 
@@ -46,13 +53,13 @@ const Portfolio = () => {
   // },
 
   return (
-    <div className='testimonials' id='testimonials'>
+    <div className='testimonials' id='blog'>
       <h1>Certificates</h1>
       <div className='container'>
         {certificates.map((d) => (
           <div className='item'>
             <img src={d.img} alt='my image'/>
-            <h3>{d.title}</h3>
+            <a href={d.link} target='_blank'><i class="fas fa-link"></i>{d.title}</a>
           </div>
         ))}
       </div>

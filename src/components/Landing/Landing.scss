@@ -17,7 +17,7 @@
       margin-top: 10px;
       width: 500px;
       height: 500px;
-      background-color: rgb(5, 77, 97);
+      background-color: $main-color;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
@@ -32,7 +32,7 @@
       }
 
       img {
-        height: 80%;
+        height: 100%;
         object-fit: cover;
         position: absolute;
         
@@ -59,18 +59,21 @@
       }
 
       h1{
-        font-size: 60px;
+        font-size: 70px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(6, 62, 105);
         margin: 10px 0;
-        font-weight: 800;
+        font-weight: 900;
 
         @include mobile{
-          font-size: 35px;
+          font-size: 40px;
+          font-weight: 500;
         }
       }
       h2{
         font-size: 35px;
         @include mobile{
-          font-size: 25px;
+          font-size: 20px;
         }
       }
       h3{
@@ -82,7 +85,7 @@
 
         span{
           font-size: inherit;
-          color: rgb(247, 143, 16);
+          color: $main-color;
         }
         .ityped-cursor{
           animation: blink 1s infinite;
@@ -105,10 +108,18 @@
       bottom: 10px;
       left: 40%;
 
+      @include mobile {
+        display: none;
+      }
+
       .fas{
         width: 30px;
         color: #130e0e;
         animation: arrowBlink 1s infinite;
+
+        @include mobile {
+          display: none;
+        }
       }
 
       @keyframes arrowBlink {

@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div className='contact' id='contact'>
       <div className='left'>
-        <img src='assets/kunfupanda.png' alt='cotact'/>
+        <img style={{width:260, height:'auto'}} src='assets/kunfupanda.png' alt='cotact'/>
       </div>
       <div className='right'>
         <h2>Contact</h2>
@@ -21,6 +21,12 @@ const Contact = () => {
           <input type='text' placeholder='Email'/>
           <textarea placeholder='Message Panda...'></textarea>
           <button type='submit'>Send</button>
+          <a 
+          className='btn' 
+          target='_blank'
+          href='ifeanyivalentine82@gmail.com'>
+              Email
+          </a>
           {message && <span>Thanks, Panda is happy, i will reply ASAP </span>}
         </form>
       </div>
