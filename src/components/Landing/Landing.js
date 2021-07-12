@@ -27,7 +27,7 @@ const Landing = () => {
           <h1>I'm Val</h1>
           <h3>Panda <span ref={textRef}>Developer</span></h3>
         </div>
-        <a href="#portfolio">
+        <a href="#about">
           <i className="fas fa-angle-double-down fa-3x"></i>
         </a>
       </div>

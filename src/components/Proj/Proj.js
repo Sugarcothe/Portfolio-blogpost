@@ -12,7 +12,7 @@ const Project = () => {
       icon: 'assets/beatbox.png',
       title: 'Drum boy',
       proj: 'Beat Box',
-      desc: 'Lorem Ipsum is simply dummy text',
+      desc: 'ReactJS',
       img:'assets/drumbox.png',
       github:'',
       link:''
@@ -23,7 +23,7 @@ const Project = () => {
       icon: 'assets/cart.png',
       title: 'Booker Buy',
       proj: 'E-commerce',
-      desc: 'Lorem Ipsum is simply dummy text',
+      desc: 'MERN stack',
       img:'assets/bookecommerce.png',
       github:'',
       link:''
@@ -34,7 +34,7 @@ const Project = () => {
       icon: 'assets/chaticon.png',
       title: 'Pidgin Box',
       proj: 'Chat APP',
-      desc: 'Lorem Ipsum is simply dummy text',
+      desc: 'MERN stack',
       img:'assets/pidgin.png',
       github:'',
       link:''
@@ -46,7 +46,7 @@ const Project = () => {
       icon: 'assets/mobile.png',
       title: 'Interact',
       proj: 'Social Media',
-      desc: 'Lorem Ipsum is simply dummy text',
+      desc: 'MERN Stack',
       img:'assets/socialmedia.jpg',
       github:'',
       link:''

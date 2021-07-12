@@ -7,7 +7,7 @@ import Landing from './components/Landing/Landing'
 import Project from './components/Proj/Proj'
 import Testimonials from './components/Testimonials/Testimonials'
 import Menu from './components/Menu/Menu'
-import Footer from './components/Footer/Footer'
+import About from './components/About/About'
 import './App.scss'
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
 
       <section className='sections'>
         <Landing/>
+        <About/>
         <Portfolio/>
         <Project/>
         <Blog/>
